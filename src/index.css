@@ -1,1 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-primary-500: #d87d4a; /* orange principal */
+  --color-primary-400: #fbaf85; /* orange clair */
+
+  --color-neutral-900: #101010; /* noir doux (texte principal) */
+  --color-neutral-800: #000000; /* noir pur */
+
+  --color-neutral-200: #f1f1f1; /* gris clair */
+  --color-neutral-100: #fafafa; /* gris très clair */
+  --color-neutral-50: #ffffff; /* blanc */
+
+  --font-manrope: "Manrope", sans-serif;
+}
+
+@layer utilities {
+  .heading-primary {
+    @apply text-[56px] tracking-[2px] leading-[58px] font-bold uppercase;
+  }
+  .heading-secondary {
+    @apply text-[40px] leading-[44px] font-bold tracking-[1.5px] uppercase;
+  }
+  .heading-tertiary {
+    @apply text-[32px] leading-[36px] font-bold tracking-[1.15px] uppercase;
+  }
+  .heading-quaternary {
+    @apply text-[28px] leading-[38px] font-bold tracking-[2px] uppercase;
+  }
+  .heading-quinary {
+    @apply text-[24px] leading-[33px] font-bold tracking-[1.7px] uppercase;
+  }
+  .heading-senary {
+    @apply text-[18px] leading-[24px] font-bold tracking-[1.3px] uppercase;
+  }
+  .overline {
+    @apply text-[14px] leading-[19px] font-bold tracking-[10px] uppercase;
+  }
+  .subtitle {
+    @apply text-[14px] leading-[19px] tracking-[10px] uppercase;
+  }
+
+  .container-custom {
+    @apply max-w-[1280px] mx-auto;
+  }
+}
+@layer components {
+}
+
+@layer base {
+  body {
+    @apply font-manrope text-[15px] leading-[25px] text-neutral-800;
+  }
+}
