@@ -9,44 +9,47 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header className='bg-neutral-900 px-6 md:px-10 relative z-60    '>
-        <nav className='w-full flex  max-md:justify-between  md:gap-[42px] items-center  lg:gap-[197px] container-custom lg:border-b border-white h-[95px]'>
-          <Link to='/'>
+      <header className="relative z-90 bg-neutral-900 px-6 md:px-10">
+        <nav className="container-custom flex h-[95px] w-full items-center border-white max-md:justify-between md:gap-[42px] lg:gap-[197px] lg:border-b">
+          <Link to="/">
             <img
-              src='/assets/shared/desktop/logo.svg'
-              alt='Logo'
+              src="/assets/shared/desktop/logo.svg"
+              alt="Logo"
               height={25}
               width={143}
             />
           </Link>
 
           <button
-            className='lg:hidden cursor-pointer -order-1'
+            className="-order-1 cursor-pointer lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             <img
-              src='/assets/shared/tablet/icon-hamburger.svg'
-              alt='Menu'
+              src="/assets/shared/tablet/icon-hamburger.svg"
+              alt="Menu"
               height={16}
               width={16}
             />
           </button>
 
-          <div className='flex md:flex-1 md:justify-end lg:justify-between'>
-            <ul className='lg:flex  gap-[34px] hidden'>
+          <div className="flex md:flex-1 md:justify-end lg:justify-between">
+            <ul className="hidden gap-[34px] lg:flex">
               {NAV_LINKS.map(({ label, path }) => (
                 <li key={label}>
-                  <Link to={path} className='text-white'>
+                  <Link
+                    to={path}
+                    className="hover:text-primary-500 leading-[25px] font-bold tracking-[2px] text-white uppercase transition-colors duration-500"
+                  >
                     {label}
                   </Link>
                 </li>
               ))}
             </ul>
 
-            <Link to='/cart'>
+            <Link to="/cart">
               <img
-                src='/assets/shared/desktop/icon-cart.svg'
-                alt='Cart'
+                src="/assets/shared/desktop/icon-cart.svg"
+                alt="Cart"
                 height={15}
                 width={20}
               />
@@ -54,13 +57,18 @@ const Navbar = () => {
           </div>
         </nav>
 
-        <div className='  overflow-hidden  rounded-bl-[8px] rounded-br-[8px] lg:hidden absolute top-full  left-0 right-0 z-50'>
+        <div
+          className={clsx(
+            "absolute top-full right-0 left-0 z-50 overflow-hidden rounded-br-[8px] rounded-bl-[8px] lg:hidden",
+            isOpen ? "pointer-events-auto" : "pointer-events-none",
+          )}
+        >
           <div
             className={clsx(
-              "bg-white px-6 md:px-10  duration-400 transition-all ",
+              "bg-white px-6 transition-all duration-400 md:px-10",
               isOpen
-                ? "pointer-events-auto opacity-100 translate-y-0  ease-out"
-                : "pointer-events-none opacity-0 -translate-y-full ease-in"
+                ? "pointer-events-auto translate-y-0 opacity-100 ease-out"
+                : "pointer-events-none -translate-y-full opacity-0 ease-in",
             )}
           >
             <MobileNavigation />
@@ -70,10 +78,10 @@ const Navbar = () => {
       {/* BACKDROP */}
       <div
         className={clsx(
-          "fixed inset-0 bg-black/40 transition-opacity lg:hidden",
+          "fixed inset-0 z-60 bg-black/40 transition-opacity lg:hidden",
           isOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+            ? "pointer-events-auto opacity-100"
+            : "pointer-events-none opacity-0",
         )}
         onClick={() => setIsOpen(false)}
       />

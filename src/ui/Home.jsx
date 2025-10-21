@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
+import HeroSection from "./HeroSection";
 
 const Home = () => {
   return (
-    <main className=''>
+    <main className="">
       <Navbar />
+      <HeroSection />
     </main>
   );
 };

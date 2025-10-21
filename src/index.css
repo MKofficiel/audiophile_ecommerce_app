@@ -17,7 +17,7 @@
 
 @layer utilities {
   .heading-primary {
-    @apply text-[56px] tracking-[2px] leading-[58px] font-bold uppercase;
+    @apply text-[36px] leading-[40px] font-bold tracking-[1.29px] uppercase md:text-[56px] md:leading-[58px] md:tracking-[2px];
   }
   .heading-secondary {
     @apply text-[40px] leading-[44px] font-bold tracking-[1.5px] uppercase;
@@ -34,15 +34,19 @@
   .heading-senary {
     @apply text-[18px] leading-[24px] font-bold tracking-[1.3px] uppercase;
   }
-  .overline {
-    @apply text-[14px] leading-[19px] font-bold tracking-[10px] uppercase;
+  .overline-text {
+    @apply text-[14px] leading-[19px] tracking-[10px] text-white/50 uppercase;
   }
   .subtitle {
     @apply text-[14px] leading-[19px] tracking-[10px] uppercase;
   }
 
+  .hero-image {
+    @apply mx-auto max-w-[1280px] bg-[url('/assets/home/mobile/image-header.jpg')] bg-cover bg-center bg-no-repeat opacity-50 md:bg-[url('/assets/home/tablet/image-header.jpg')] lg:bg-[url('/assets/home/desktop/image-hero.jpg')];
+  }
+
   .container-custom {
-    @apply max-w-[1280px] mx-auto;
+    @apply mx-auto max-w-[1280px];
   }
 }
 @layer components {
