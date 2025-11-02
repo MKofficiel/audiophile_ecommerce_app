@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-const Button = ({ children, variant, className, to }) => {
+const Button = ({ children, variant = "primary", className, to }) => {
   const styleBase =
     " min-h-[48px] transition-all duration-200 px-[30px] py-[15px] uppercase ease-in-out text-[13px] font-bold tracking-[1px] ";
 
@@ -8,7 +8,7 @@ const Button = ({ children, variant, className, to }) => {
     primary:
       " bg-primary-500 text-white hover:bg-primary-300 active:bg-primary-700 ",
     secondary:
-      " bg-transparent border border-black text-black hover:bg-black hover:text-white active:bg-neutral-800 ",
+      " bg-black border border-black text-white hover:bg-black hover:text-white active:bg-neutral-800 ",
   };
   return (
     <Link
