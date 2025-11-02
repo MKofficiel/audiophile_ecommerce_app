@@ -59,7 +59,7 @@ const Navbar = () => {
 
         <div
           className={clsx(
-            "absolute top-full right-0 left-0 z-50 overflow-hidden rounded-br-[8px] rounded-bl-[8px] lg:hidden",
+            "absolute top-full right-0 left-0 z-50 overflow-hidden rounded-br-lg rounded-bl-lg lg:hidden",
             isOpen ? "pointer-events-auto" : "pointer-events-none",
           )}
         >

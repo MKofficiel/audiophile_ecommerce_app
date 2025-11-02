@@ -3,7 +3,7 @@ import { MOBILE_ITEM_CARDS } from "../constants";
 
 const MobileNavigation = () => {
   return (
-    <div className='h-full  grid max-md:grid-rows-3 md:grid-cols-3 md pt-[84px] pb-[35px] md:pb-[67px] gap-[68px] md:gap-x-[10px]'>
+    <div className="md grid h-full gap-[68px] pt-[84px] pb-[35px] max-md:grid-rows-3 md:grid-cols-3 md:gap-x-2.5 md:pb-[67px]">
       {MOBILE_ITEM_CARDS.map(({ img, label, path }) => (
         <MobileItemCard key={label} img={img} label={label} path={path} />
       ))}
