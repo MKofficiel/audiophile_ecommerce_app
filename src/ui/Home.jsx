@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import ProductShowCase from "./ProductShowCase";
 import Products from "./Products";
+import AboutBrand from "./AboutBrand";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HeroSection />
       <ProductShowCase />
       <Products />
+      <AboutBrand />
     </main>
   );
 };
