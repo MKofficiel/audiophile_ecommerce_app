@@ -9,7 +9,7 @@ const AboutBrand = () => {
   }[device];
 
   return (
-    <section className="px-6 py-[120px] md:px-10">
+    <section className="px-6 py-[120px] md:px-10 md:py-24 lg:py-[200px]">
       <div className="container-custom">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-[125px]">
           <div className="lg:order-2">

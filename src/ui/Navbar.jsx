@@ -4,21 +4,23 @@ import { NAV_LINKS } from "../constants";
 import { useState } from "react";
 import MobileNavigation from "./MobileNavigation";
 import clsx from "clsx";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <header className="relative z-90 bg-neutral-900 px-6 md:px-10">
+      <header className="relative z-200 bg-neutral-900 px-6 md:px-10">
         <nav className="container-custom flex h-[95px] w-full items-center border-[#979797] max-md:justify-between md:gap-[42px] lg:gap-[197px] lg:border-b">
-          <Link to="/">
+          {/* <Link to="/">
             <img
               src="/assets/shared/desktop/logo.svg"
               alt="Logo"
               height={25}
               width={143}
             />
-          </Link>
+          </Link> */}
+          <Logo />
 
           <button
             className="-order-1 cursor-pointer lg:hidden"

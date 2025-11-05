@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import ProductShowCase from "./ProductShowCase";
 import Products from "./Products";
 import AboutBrand from "./AboutBrand";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <ProductShowCase />
       <Products />
       <AboutBrand />
+      <Footer />
     </main>
   );
 };
