@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-500: #d87d4a; /* orange principal */
-  --color-primary-400: #fbaf85; /* orange clair */
+  --color-primary-500: #d87d4a;
+  --color-primary-400: #fbaf85;
 
-  --color-neutral-900: #101010; /* noir doux (texte principal) */
-  --color-neutral-800: #000000; /* noir pur */
+  --color-neutral-900: #101010;
+  --color-neutral-800: #000000;
 
-  --color-neutral-200: #f1f1f1; /* gris clair */
-  --color-neutral-100: #fafafa; /* gris très clair */
-  --color-neutral-50: #ffffff; /* blanc */
+  --color-neutral-200: #f1f1f1;
+  --color-neutral-100: #fafafa;
+  --color-neutral-50: #ffffff;
 
   --font-manrope: "Manrope", sans-serif;
 }
@@ -46,7 +46,7 @@
   }
 
   .container-custom {
-    @apply mx-auto max-w-[1280px];
+    @apply mx-auto max-w-[1110px];
   }
 }
 @layer components {

@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <header className="relative z-90 bg-neutral-900 px-6 md:px-10">
-        <nav className="container-custom flex h-[95px] w-full items-center border-white max-md:justify-between md:gap-[42px] lg:gap-[197px] lg:border-b">
+        <nav className="container-custom flex h-[95px] w-full items-center border-[#979797] max-md:justify-between md:gap-[42px] lg:gap-[197px] lg:border-b">
           <Link to="/">
             <img
               src="/assets/shared/desktop/logo.svg"

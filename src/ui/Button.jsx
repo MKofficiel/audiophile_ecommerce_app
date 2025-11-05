@@ -9,6 +9,8 @@ const Button = ({ children, variant = "primary", className, to }) => {
       " bg-primary-500 text-white hover:bg-primary-300 active:bg-primary-700 ",
     secondary:
       " bg-black border border-black text-white hover:bg-black hover:text-white active:bg-neutral-800 ",
+
+    tertiary: "hover:bg-black border hover:text-white",
   };
   return (
     <Link
