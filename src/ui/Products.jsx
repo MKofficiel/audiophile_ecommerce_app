@@ -1,4 +1,4 @@
-import useImageResponsive from "../hooks/useResponsive";
+import useImageResponsive from "../hooks/useImageResponsive";
 import Button from "./Button";
 
 const Products = () => {
@@ -22,7 +22,7 @@ const Products = () => {
     desktop: "/assets/home/desktop/image-earphones-yx1.jpg",
   }[device];
   return (
-    <section className="px-6 md:px-10">
+    <section className="px-6 pb-[120px] md:px-10 md:pb-24 lg:pb-[200px]">
       <div className="container-custom space-y-6 md:space-y-8">
         {/* Zx9 speaker */}
         <div className="bg-primary-500 overflow-hidden rounded-lg">
@@ -43,7 +43,7 @@ const Products = () => {
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <Button variant="secondary" to="">
+              <Button variant="secondary" to="/category/headphones">
                 see product
               </Button>
             </div>
@@ -61,7 +61,9 @@ const Products = () => {
           <div className="relative z-10 pl-6">
             <h2 className="heading-quaternary mb-8">ZX7 SPEAKER</h2>
 
-            <Button variant="tertiary">see product</Button>
+            <Button variant="tertiary" to="/category/speakers">
+              see product
+            </Button>
           </div>
 
           <img src={imageZx7} className="absolute" />
@@ -77,6 +79,7 @@ const Products = () => {
               <h2 className="heading-quaternary mb-8">YX1 EARPHONES</h2>
 
               <Button variant="tertiary">see product</Button>
+              {/* <Link to="category/earphones">see product</Link> */}
             </div>
           </div>
         </div>

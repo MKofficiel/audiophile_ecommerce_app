@@ -4,7 +4,7 @@ import { NAV_LINKS } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="border bg-neutral-900 px-6 px-10 pt-[52px] pb-[38px] md:pt-[60px] md:pb-[46px] lg:pt-[75px] lg:pb-12">
+    <footer className="border bg-neutral-900 px-6 pt-[52px] pb-[38px] md:px-10 md:pt-[60px] md:pb-[46px] lg:pt-[75px] lg:pb-12">
       <div className="container-custom before:bg-primary-500 relative before:absolute before:top-[-52px] before:left-0 before:h-1 before:w-[101px] before:content-[''] max-md:before:left-1/2 max-md:before:-translate-x-1/2 md:before:top-[-60px] lg:before:top-[-75px]">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-y-8">
           <nav className="flex flex-col items-center gap-12 md:col-span-2 md:items-start md:gap-8 lg:flex-row lg:justify-between">

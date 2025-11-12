@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 
-const MobileItemCard = ({ img, label, path }) => {
+const MobileItemCard = ({ img, label, path, onOpen }) => {
+  console.log(path);
   return (
     <div className="relative flex min-h-[165px] justify-center rounded-lg bg-neutral-200 p-[22px]">
       <img
@@ -13,7 +14,11 @@ const MobileItemCard = ({ img, label, path }) => {
           <h2 className="mb-[17px] text-[15px] font-bold tracking-[1.07px] uppercase">
             {label}
           </h2>
-          <Link to={path} className="flex items-center gap-[13.2px]">
+          <Link
+            to={path}
+            className="flex items-center gap-[13.2px]"
+            onClick={() => onOpen?.(false)}
+          >
             <span className="tracking-[1px text-neutral-800/50 uppercase">
               Shop
             </span>

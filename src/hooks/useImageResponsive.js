@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 
 const useImageResponsive = () => {
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
+  // const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
   const isTablet = useMediaQuery({
     query: "(min-width: 768px) and (max-width: 1023px)",
   });
@@ -11,7 +11,7 @@ const useImageResponsive = () => {
   if (isTablet) device = "tablet";
   if (isMobile) device = "mobile";
 
-  return { isDesktop, isTablet, isMobile, device };
+  return { device };
 };
 
 export default useImageResponsive;

@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 const HeroSection = () => {
   // bg-[#121212]
   return (
-    <section className="relative overflow-hidden bg-[#121212] px-6 max-lg:-mt-30 max-md:-mt-20 md:px-10 lg:-mt-30">
+    <section className="relative overflow-hidden bg-[#121212] max-lg:-mt-30 max-md:-mt-20 md:px-10 lg:-mt-30">
       <div className="container-custom">
         {/* <div className="hero-image min-h-[886px] max-md:min-h-[632px]" /> */}
         <div className="hero-image h-[886px] max-md:h-[632px]" />
@@ -12,7 +12,7 @@ const HeroSection = () => {
             <h1 className="heading-primary mb-6">
               <span className="md:block">XX99 MARK II </span>HEADPHONES
             </h1>
-            <p className="mb-7 text-white/75 max-lg:mx-auto md:mb-10 md:max-w-[349px]">
+            <p className="mb-7 text-white/75 max-lg:mx-auto max-md:px-6 md:mb-10 md:max-w-[349px]">
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
             </p>
@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div class="absolute inset-0 z-10 bg-[#121212]/45"></div>
+      <div class="absolute inset-0 z-10 bg-[#121212]/45 bg-blend-multiply"></div>
     </section>
   );
 };
