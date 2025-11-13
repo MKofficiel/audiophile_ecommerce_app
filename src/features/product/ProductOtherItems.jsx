@@ -1,18 +1,19 @@
 import Button from "../../ui/Button";
 
-const ProductOtherItems = ({ item }) => {
-  console.log(item.image.mobile, "productother");
-
+const ProductOtherItems = ({ item: { image, name, slug } }) => {
   return (
-    <div className="border text-center">
+    <div className="text-center">
       {/* <div className="flex justify-center rounded-lg bg-neutral-200 md:py-[62px]"> */}
-      <div className="grid rounded-lg bg-neutral-200 md:grid-cols-3 md:py-[62px]">
-        {/* <img src={image} className="h-[199px] w-[200px] object-cover py-4" /> */}
+      <div className="mb-8 flex h-[120px] items-center justify-center rounded-lg bg-neutral-200 md:mb-10 md:h-[318px]">
+        <img
+          src={image}
+          className="h-[95px] w-[73px] object-cover md:h-[194px] md:w-[175px]"
+        />
       </div>
-      <h2 className="text-[24px] font-bold tracking-[1.71px] uppercase">
+      <h2 className="mb-8 text-[24px] font-bold tracking-[1.71px] uppercase">
         {name}
       </h2>
-      {/* <Button to={`${slug}`}>SEE product</Button> */}
+      <Button to={`${slug}`}>SEE product</Button>
     </div>
   );
 };

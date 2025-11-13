@@ -103,17 +103,17 @@ const ProductsItem = [
       {
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
-        image: "/assets/bg-remove/x99mark2.png",
+        image: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
       },
       {
         slug: "xx59-headphones",
         name: "XX59",
-        image: "/assets/bg-remove/x99mark2.png",
+        image: "/assets/shared/desktop/image-xx59-headphones.jpg",
       },
       {
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
-        image: "/assets/bg-remove/x99mark2.png",
+        image: "/assets/shared/desktop/image-zx9-speaker.jpg",
       },
     ],
   },
@@ -185,25 +185,20 @@ const ProductsItem = [
       {
         slug: "xx99-mark-two-headphones",
         name: "XX99 Mark II",
-        image: "/assets/bg-remove/xx99-mark-ii.png",
+        // image: "/assets/bg-remove/xx99-mark-ii.png",
+        image: "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
       },
       {
         slug: "xx59-headphones",
         name: "XX59",
-        image: {
-          mobile: "/assets/shared/mobile/image-xx59-headphones.jpg",
-          tablet: "/assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "/assets/shared/desktop/image-xx59-headphones.jpg",
-        },
+        // image: "/assets/bg-remove/xx99-mark-ii.png",
+        image: "/assets/shared/desktop/image-xx59-headphones.jpg",
       },
       {
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
-        image: {
-          mobile: "/assets/shared/mobile/image-zx9-speaker.jpg",
-          tablet: "/assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "/assets/shared/desktop/image-zx9-speaker.jpg",
-        },
+        // image: "/assets/bg-remove/xx99-mark-ii.png",
+        image: "/assets/shared/desktop/image-zx9-speaker.jpg",
       },
     ],
   },
@@ -266,29 +261,17 @@ const ProductsItem = [
       {
         slug: "xx99-mark-two-headphones",
         name: "XX99 Mark II",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg",
       },
       {
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
       },
       {
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
-        image: {
-          mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-          tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
-        },
+        image: "/assets/shared/desktop/image-zx9-speaker.jpg",
       },
     ],
   },
@@ -355,29 +338,17 @@ const ProductsItem = [
       {
         slug: "zx7-speaker",
         name: "ZX7 Speaker",
-        image: {
-          mobile: "./assets/shared/mobile/image-zx7-speaker.jpg",
-          tablet: "./assets/shared/tablet/image-zx7-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx7-speaker.jpg",
-        },
+        image: "/assets/shared/desktop/image-zx7-speaker.jpg",
       },
       {
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
       },
       {
         slug: "xx59-headphones",
         name: "XX59",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx59-headphones.jpg",
       },
     ],
   },
@@ -444,29 +415,17 @@ const ProductsItem = [
       {
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
-        image: {
-          mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-          tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
-        },
+        image: "/assets/shared/desktop/image-zx9-speaker.jpg",
       },
       {
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
       },
       {
         slug: "xx59-headphones",
         name: "XX59",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx59-headphones.jpg",
       },
     ],
   },
@@ -533,35 +492,20 @@ const ProductsItem = [
       {
         slug: "xx99-mark-one-headphones",
         name: "XX99 Mark I",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg",
       },
       {
         slug: "xx59-headphones",
         name: "XX59",
-        image: {
-          mobile: "./assets/shared/mobile/image-xx59-headphones.jpg",
-          tablet: "./assets/shared/tablet/image-xx59-headphones.jpg",
-          desktop: "./assets/shared/desktop/image-xx59-headphones.jpg",
-        },
+        image: "/assets/shared/desktop/image-xx59-headphones.jpg",
       },
       {
         slug: "zx9-speaker",
         name: "ZX9 Speaker",
-        image: {
-          mobile: "./assets/shared/mobile/image-zx9-speaker.jpg",
-          tablet: "./assets/shared/tablet/image-zx9-speaker.jpg",
-          desktop: "./assets/shared/desktop/image-zx9-speaker.jpg",
-        },
+        image: "/assets/shared/desktop/image-zx9-speaker.jpg",
       },
     ],
   },
 ];
-
-// C:\Users\DELL\Desktop\audiophile_ecommerce_app\public\assets\bg-remove\zx9.png
-// C:\Users\DELL\Desktop\audiophile_ecommerce_app\public\assets\bg-remove\zx7.png
 
 export { NAV_LINKS, MOBILE_ITEM_CARDS, ProductsItem };

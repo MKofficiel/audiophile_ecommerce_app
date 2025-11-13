@@ -7,6 +7,7 @@ import ProductFeature from "./ProductFeature";
 import ProductInBox from "./ProductInBox";
 import ProductGalery from "./ProductGalery";
 import ProductOthers from "./ProductOthers";
+import ProductShowCase from "../../ui/ProductShowCase";
 
 const ProductDetail = () => {
   const { slug } = useParams();
@@ -21,7 +22,7 @@ const ProductDetail = () => {
 
   // console.log(slug);
   return (
-    <section className="px-6 pt-4">
+    <section className="px-6 pt-4 md:pt-[33px] lg:pt-[79px]">
       <div className="container-custom">
         <GoBack />
         <ProductItem item={product} isCart={true} />
@@ -33,6 +34,7 @@ const ProductDetail = () => {
         <ProductGalery gallery={product.gallery} />
 
         <ProductOthers others={product.others} />
+        <ProductShowCase />
       </div>
     </section>
   );

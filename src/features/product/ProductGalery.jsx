@@ -14,14 +14,14 @@ const ProductGalery = ({ gallery }) => {
   console.log(firstSrc, secondSrc, thirdSrc);
 
   return (
-    <div className="grid gap-y-5 md:grid-cols-[45fr_55fr] md:gap-x-[18px]">
+    <div className="grid gap-y-5 md:grid-cols-[45fr_55fr] md:gap-x-[18px] lg:gap-x-[30px]">
       <div className="flex flex-col gap-5">
         <div className="">
-          <img src={firstSrc} className="rounded-lg object-cover" />
+          <img src={firstSrc} className="w-full rounded-lg object-cover" />
         </div>
 
         <div>
-          <img src={secondSrc} className="rounded-lg object-cover" />
+          <img src={secondSrc} className="w-full rounded-lg object-cover" />
         </div>
       </div>
 
